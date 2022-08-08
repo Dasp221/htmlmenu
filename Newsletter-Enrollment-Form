@@ -1,0 +1,145 @@
+<head>
+    <title>Newsletter Enrollment Form</title>
+    <style>
+      <link rel="stylesheet" href="styles.css">
+      body {
+        background-color: purple;
+        background-image: linear-gdivent( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ),url(https://cdn.pixabay.com/photo/2014/10/04/21/11/fly-fishing-474090_1280.jpg); 
+        width: 100%;
+        height:auto;
+      }
+  
+      #title {
+        text-align: center;
+        font-size: 100%;
+        font-family: helvetica;
+        color: Black;
+        background-color: green;
+        padding: 10px;
+  
+      }
+      #description {
+        text-align: center;
+        font-size: 100%;
+        font-family: sans;
+        color: black;
+        background-color: yellow;
+        padding: 30px;
+      }
+  
+      #duck-color {
+        color: black;
+        text-align: center;
+      }
+  
+  
+      h2 {
+        text-align: center;
+        font-family: Times New Roman;
+        color: black;
+        background-color: pink;
+        padding: 20px;
+      }
+  
+      #survey-form {
+        text-align: center;
+        font-family: times new roman;
+        color: black;
+        background-color: white;
+        background-image: ;
+        padding: 15px;
+      }
+  
+      #name-label {
+        text-align: center;
+        font-family: helvetica;
+        width: auto;
+        height: auto;
+      }
+  
+      #email-label {
+        text-align: center;
+        font-family: helvetica;
+        width: auto;
+        height: auto;
+      }
+  
+      #number-label {
+        text-align: center;
+        font-family: helvetica;
+        width: auto;
+        height: auto;
+        align: center;
+      }
+  
+      </style>
+  </head>
+  
+  <body>
+  <h1 id="title" class="text-center"> Newsletter Enrollment </h1>
+  <p id="description"> Enroll now to be included on our monthly newsletter where you will be the first to know about store specials, events, seminars, and more!</p>
+  <form id="survey-form"> 
+    
+    <div id="name-box">
+    <label id="name-label">Name <input id="name" required name="name" type="text" placeholder="Enter Your Name" />
+    </label>
+    </div>
+      </br>
+    <div id="email-box">
+    <label id="email-label">Email <input id="email" required name="email" type="email" placeholder="Enter Your Email" /></label>
+    </div>
+    </br>
+     <label id="number-label">Number <input id="number" name="number" type="number" min="0" max="9" placeholder="Enter A Number" /></label>
+     
+  <fieldset>
+  <p>  
+  <legend for="interest">What interests you?</legend>
+    <div>
+    <input type="checkbox" id="interests"        value="bass-fly" name="bass-fly" checked>
+    <label for="bass-fly">Bass on the fly</label>
+    </div>
+    <div>
+    <input type="checkbox" id="interests"        value="trout-fly" name="trout-fly">
+    <label for="trout-fly">Trout on the fly</label>
+    </div>
+    <div>
+    <input type="checkbox" id="interests"        value="panfish-fly" name="panfish-fly">
+    <label for="panfish-fly">Panfish on the fly</label>
+    </div>
+    <div>
+    <input type="checkbox" id="interests"        value="bass-con" name="bass-con">
+    <label for="bass-con">Bass on gear</label>
+    </div>
+    <div>
+    <input type="checkbox" id="interests"        value="trout-con" name="trout-con">
+    <label for="trout-con">Trout on gear</label>
+    </div>
+    <div>
+    <input type="checkbox" id="interests"        value="pan-con" name="pan-con">
+    <label for="pan-con">Panfish on gear</label>
+    </div>
+    </input>
+    </p>
+    <p>
+  <label for="Hear-About">
+          How did you hear about us?
+  </label>
+         
+    <select name="referrer" id="dropdown">
+      <option value="google">Google</option>
+      <option value="yahoo">Yahoo</option>
+      <option value="other">Other</option>
+      </select>
+  </p>
+  <div id="duck-color">
+      Yellow Duck <input type="radio" checked value="yellow" id="duck-color"           name="duck-color">
+      Black Duck <input type="radio" value="black" id="duck-color" name="duck-color">
+      White Duck <input type="radio" value="white" id="duck-color" name="duck-color">
+  </div>
+  </br>
+  
+  <textarea id="comments" position="center" name="comments" type="text">Comments</textarea>
+  </fieldset>
+  <input id="submit" type="submit" value="Submit" />
+  </form>
+    </body>
